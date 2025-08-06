@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        int prod = 1;
+        int reminder;
+        
+        while (n != 0) {
+            reminder = n % 10;
+            sum += reminder;
+            prod *= reminder;
+            n /= 10;
+        }
+        
+        if (sum == prod) {
+            System.out.println("Spy Number");
+        }
+        else {
+            System.out.println("Not a Spy Number");
+        }
+    }
+}
