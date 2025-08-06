@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int marks = sc.nextInt();
+        
+        if (90 <= marks) {
+            System.out.println("Grade A");
+        }
+        else if (80 <= marks) {
+            System.out.println("Grade B");
+        }
+        else if (70 <= marks) {
+            System.out.println("Grade C");
+        }
+        else if (60 <= marks) {
+            System.out.println("Grade D");
+        }
+        else if (50 <= marks) {
+            System.out.println("Grade E");
+        }
+        else {
+            System.out.println("Fail");
+        }
+    }
+}
